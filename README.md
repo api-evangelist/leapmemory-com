@@ -64,17 +64,18 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-LeapMemory provides AI-powered memory solutions that allow applications to retain and recall user data accurately over time. By offering isolated, persistent memory graphs, developers can integrate real, searchable memory into their AI agents without data loss or rewrites. The platform supports multiple languages, privacy controls, and seamless integration via MCP, targeting both developers and organizations seeking reliable AI memory capabilities.
+LeapMemory provides AI memory services that allow large language models to retain and recall user-specific data across sessions. Their platform offers a persistent memory graph, isolation of user data, and multilingual support, enabling developers to integrate long-term contextual awareness into AI applications. Based in Tallinn, Estonia, LeapMemory targets developers and organizations seeking to enhance AI interactions with reliable, private memory storage.
 
-**Areas:** Company · AI · Memory · Platform · Developer · SaaS
+**Areas:** AI · Memory · Platform · DeveloperTools · Tallinn
 
 ## LeapMemory on APIs.io
 
 Everything profiled for LeapMemory is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/leapmemory-com/](https://apis.io/providers/leapmemory-com/)** — or go straight to one of the APIs or properties below.
 
-### APIs (1)
+### APIs (2)
 
-- [LeapMemory API](https://apis.io/apis/leapmemory-com/leapmemory-com-api/) — LeapMemory API as documented publicly: 43 operations. Contract generated from the documentation by API Evangelist (2026-11-15); not the provider's own document.
+- [LeapMemory API](https://apis.io/apis/leapmemory-com/leapmemory-api/) — API for LeapMemory platform providing memory services.
+- [LeapMemory Api API](https://apis.io/apis/leapmemory-com/leapmemory-api-api/) — LeapMemory Api API: 105 operations.
 
 ### Published properties
 
@@ -84,12 +85,12 @@ Each property below is a page on APIs.io carrying the machine-readable artifact 
 
 The data models the API reads and writes.
 
-- [GetV1UsageResponse](https://apis.io/schemas/leapmemory-com/leapmemory-com-get-v1-usage-response/)
-- [PatchTenantsIdRequest](https://apis.io/schemas/leapmemory-com/leapmemory-com-patch-tenants-id-request/)
-- [PostRulesRequest](https://apis.io/schemas/leapmemory-com/leapmemory-com-post-rules-request/)
-- [PostV1TenantsResponse](https://apis.io/schemas/leapmemory-com/leapmemory-com-post-v1-tenants-response/)
-- [PostV1TenantsTenantidRulesRequest](https://apis.io/schemas/leapmemory-com/leapmemory-com-post-v1-tenants-tenantid-rules-request/)
-- [PostV1TenantsTenantidTurnsRequest](https://apis.io/schemas/leapmemory-com/leapmemory-com-post-v1-tenants-tenantid-turns-request/)
+- [Body_oauth_consent_oauth_consent_post](https://apis.io/schemas/leapmemory-com/leapmemory-com-body-oauth-consent-oauth-consent-post/)
+- [Body_oauth_token_oauth_token_post](https://apis.io/schemas/leapmemory-com/leapmemory-com-body-oauth-token-oauth-token-post/)
+- [DocumentRequest](https://apis.io/schemas/leapmemory-com/leapmemory-com-document-request/)
+- [RecallRequest](https://apis.io/schemas/leapmemory-com/leapmemory-com-recall-request/)
+- [TurnRequest](https://apis.io/schemas/leapmemory-com/leapmemory-com-turn-request/)
+- [UpdateTenantRequest](https://apis.io/schemas/leapmemory-com/leapmemory-com-update-tenant-request/)
 
 #### JSON-LD (1)
 
@@ -103,10 +104,11 @@ Spectral rulesets for the provider's contracts.
 
 - [LeapMemory API Rules](https://apis.io/rules/leapmemory-com/leapmemory-com-rules/)
 
-#### Security (1)
+#### Security (2)
 
 Authentication, trust centre, and vulnerability disclosure.
 
+- [LeapMemory Authentication](https://apis.io/security/leapmemory-com/leapmemory-com-authentication/)
 - [LeapMemory Domain Security](https://apis.io/security/leapmemory-com/leapmemory-com-domain-security/)
 
 #### Plans and pricing (1)
@@ -130,18 +132,18 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 47.4** — developing · rubric 0.28.0 · scored 2026-11-15
+**Kin Score 53.3** — developing · rubric 0.27.0 · scored 2026-11-15
 
 | Facet | Score |
 |---|---|
-| Discoverability | 66.1 |
-| Contract quality | 45.6 |
+| Discoverability | 57.1 |
+| Contract quality | 50.7 |
 | Contract governance | 79.1 |
 | Operational transparency | 0.0 |
-| Developer ergonomics | 49.3 |
-| Access clarity | 48.5 |
+| Developer ergonomics | 61.2 |
+| Access clarity | 60.0 |
 
-**Agent readiness 38.0** — agent-ready
+**Agent readiness 41.6** — agent-ready (gated down from agent-native)
 
 | Agent-readiness dimension | Result |
 |---|---|
@@ -151,12 +153,12 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | MCP Server | documented (partial credit) |
 | Auth Clarity | served (partial credit) |
 | Idempotency | — |
-| Error Semantics | — |
+| Error Semantics | derived (partial credit) |
 | OpenAPI Examples | — |
 | Rate Limit Signal | — |
 | Event Surface Described | — |
 | Agent Skills | unknown |
-| Well Known Catalog | — |
+| Well Known Catalog | yes |
 | Consent Identity | — |
 | Agent Card | — |
 | Dry Run Mode | — |
@@ -168,7 +170,7 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Operation Distinctiveness | na |
 | MCP Tool Quality | na |
 
-**Regulatory alignment 17.3** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 22.7** — Horizontal (data, software, accessibility, platform)
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/leapmemory-com/](https://apis.io/providers/leapmemory-com/).
 
